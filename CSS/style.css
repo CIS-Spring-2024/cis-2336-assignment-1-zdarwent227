@@ -2,7 +2,54 @@
     color: blue;
 }
 
+.ownerheader{
+  text-align: center;
+}
+
 #owner_Headshot{
     position: relative;
+    display: block;
+    margin: 0 auto;
     
+}
+
+.topnavbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .topnavbar a:hover{
+    
+    color :crimson;
+  }
+
+
+  .topnavbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    
+  }
+
+  .footer{
+    background-color: #333;
+    padding: 30px;
+    text-align: center;
+    
+  }
+/* Start of menu page css */
+
+.menuheader{
+  text-align: center;
+}
+
+.menuimages{
+  width: 350px;
+}
+
+#menulink {
+  color: purple;
+  text-align: center;
 }
