@@ -159,6 +159,25 @@ td {
   padding: 10px;
 }
 /* Main content */
+.maincontent h1{
+  margin-top: 85px;
+  font-size: 50px;
+  text-align: center; /* Center the text */
+  position: relative; /* Make the position relative for absolute positioning */
+}
+
+
+.maincontent h1::after {
+  content: ''; 
+  position: absolute; 
+  bottom: -5px; 
+  left: 50%; 
+  width: 245px; 
+  height: 2px; 
+  background-color: #000; 
+  transform: translateX(-50%); 
+}
+
 
 .maincontent h1{
   margin-top: 75px;
@@ -220,14 +239,120 @@ td {
 /* Start of menu page css */
 
 .menuheader{
-  text-align: center;
+  margin-top: 85px;
+  font-size: 50px;
+  text-align: center; 
+  position: relative; 
 }
 
-.menuimages{
-  width: 350px;
+
+.menuheader::after {
+  content: ''; 
+  position: absolute; 
+  bottom: -5px; 
+  left: 50%; 
+  width: 85px; 
+  height: 2px; 
+  background-color: #000; 
+  transform: translateX(-50%); 
 }
 
-#menulink {
-  color: purple;
-  text-align: center;
+.menuheader img{
+  width: 50px;
 }
+
+
+.menu_pics_and_links {
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start; 
+  flex-wrap: wrap; 
+}
+
+.menu-item {
+  text-align: center;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  flex-basis: 20%;
+}
+
+.menuimages {
+  width: 90%; 
+  margin-top: 20px;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0); 
+  transition: box-shadow 0.3s ease; 
+}
+
+.menu-item a{
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.menu-item:hover{
+  font-weight: bolder;
+}
+
+
+.middle-image {
+  text-align: center;
+  margin-top: 200px;
+  width: 70px; 
+}
+
+.middle-image img {
+  max-width: 100%; 
+  display: inline-block; 
+  vertical-align: middle; 
+}
+
+.slideshow-container {
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+  border: 7px solid rgb(218, 17, 50);
+  padding: 1px; 
+  margin-bottom: 50px;
+  
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(255, 255, 255, 0.479);
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.911);
+}
+
+
+.menuimages:hover{
+  
+  box-shadow: 0 0 20px 10px rgb(218, 17, 50); 
+}
+
